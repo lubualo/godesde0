@@ -1,16 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"github.com/lubualo/godesde0/excercises"
+	"github.com/lubualo/godesde0/keyboard"
 )
 
 func main() {
-	number, text := excercises.Excercise01("12345")
-	fmt.Println(number)
-	fmt.Println(text)
-
-	number, text = excercises.Excercise01("123A45")
-	fmt.Println(number)
-	fmt.Println(text)
+	keyboard.NunberProduct()
 }
