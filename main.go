@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/lubualo/godesde0/keyboard"
+	"github.com/lubualo/godesde0/excercises"
 )
 
 func main() {
-	keyboard.NunberProduct()
+	excercises.Excercise02()
 }
