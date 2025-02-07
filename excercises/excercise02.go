@@ -7,21 +7,19 @@ import (
 	"strconv"
 )
 
-func Excercise02() {
+func Excercise02() string {
 	scanner := bufio.NewScanner(os.Stdin)
-
+	var text string
 	fmt.Println("Write a number:")
 	if scanner.Scan() {
 		num, err := strconv.Atoi(scanner.Text())
-		fmt.Println()
 		if err != nil {
 			fmt.Println("Invalid input, Let's try again!")
-			Excercise02()
-			return
+			return Excercise02()
 		}
 		for i := 0; i < 11; i++ {
-			fmt.Printf("%d x %d = %d\n", num, i, num*i)
+			text += fmt.Sprintf("%d x %d = %d\n", num, i, num*i)
 		}
 	}
-
+	return text
 }

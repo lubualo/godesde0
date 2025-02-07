@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/lubualo/godesde0/excercises"
-)
+import "github.com/lubualo/godesde0/arrays_slices"
 
 func main() {
-	excercises.Excercise02()
+	arrays_slices.ShowArrays()
 }
